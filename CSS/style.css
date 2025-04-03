@@ -1,0 +1,157 @@
+/* コーディング仕様
+コンテンツ幅:コンテンツの横幅は960pxで横のパディングは4%です。
+メインビジュアルだけ全幅にします。
+メインビジュアル:全幅で高さは600px固定です。
+About:画像をCSSで丸く切り抜きます。
+画像とテキストを横並びの中央寄せで配置します。
+Bicycle:画像を両端ぞろえの横ならびに配置します。
+レスポンシブ:ブレークポイントは600pxです。
+About、Bicycleともに、レスポンシブ時はコンテンツを縦積みにします。 */
+
+/* 共通 */
+html {
+  font-family: "メイリオ";
+  font-size: 14.4px;
+  color: #383e45;
+}
+.section {
+  margin: 80px 0 0 0;
+}
+.inner {
+  padding: 0 4%;
+  width: 100%;
+}
+.section_title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.section_subtitle {
+  margin: 10px 0;
+}
+.section_textarea {
+  margin-bottom: 0px;
+}
+
+.under {
+  border-bottom: solid 1px #000;
+}
+.section_subtitle {
+  font-weight: bold;
+}
+
+/* Header */
+/* ロゴ */
+.header_logo {
+  margin-right: auto; /*https://coliss.com/articles/build-websites/operation/css/justify-space-between-in-flexbox.html*/
+}
+.header_logo img {
+  width: 120px;
+}
+.header_nav {
+  margin: auto 0;
+}
+
+/* nav */
+.header_nav_list {
+  /*ul*/
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.header_nav_item {
+  /*li*/
+  display: inline-block;
+}
+.header_nav_link {
+  text-decoration: none;
+  color: #000;
+}
+.header .inner {
+  padding: 10px 4%;
+  display: flex;
+}
+/* top img */
+.header_top {
+  margin-top: 0;
+}
+.header_top img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* About */
+#about p {
+  line-height: 21px;
+}
+.about_img img {
+  border-radius: 50%;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Bicycle */
+#bicycle {
+  text-align: center;
+  margin-top: 20px;
+}
+#bicycle img {
+  width: 100%;
+}
+#bicycle .section_textarea {
+  margin-bottom: 30px;
+}
+
+/* CopyLight */
+footer {
+  margin: 110px 0 10px 0;
+  text-align: center;
+}
+
+/* PCメディアクエリ　ブレークポイント */
+@media screen and (min-width: 600px) {
+  .section_title {
+    margin-bottom: 70px;
+  }
+
+  .inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* header */
+  .header_top img {
+    height: 600px;
+    width: 100vw;
+  }
+  .header {
+    margin-top: 0;
+  }
+  /* About */
+  #about .section_subtitle {
+    margin-top: 0;
+  }
+  .about_pc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .section_text {
+    width: 403px;
+  }
+  .about_img {
+    /* margin: auto 0; */
+    margin-right: 30px;
+  }
+  /* Bicycle */
+  .bicycle_contents {
+    display: flex;
+    justify-content: center;
+    gap: 16.2px;
+  }
+  #bicycle .section_textarea {
+    margin-bottom: 40px;
+  }
+}

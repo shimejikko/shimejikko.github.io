@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コード指定　UTF−8を指定 -->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示する「レスポンシブ表示」のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコン -->
+    <link rel="shortcut icon" href="img/" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述 -->
+    <!-- あとでnoindexをきちんと確認する（公開時） -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトタイトル -->
+    <title>1カラム</title>
+    <!-- サイトの説明文 -->
+    <!-- あとでdescriptionをきちんと確認する（公開時） -->
+    <meta name="description" content="サイトの概要を記入します" />
+    <!-- Google　Fontsを読み込む -->
+    <!-- スタイルシートの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner">
+        <h1 class="header_logo"><img src="img/logo.svg" /></h1>
+        <nav class="header_nav">
+          <ul class="header_nav_list">
+            <li class="header_nav_item">
+              <a href="#about" class="header_nav_link">About</a>
+            </li>
+            <li class="header_nav_item">
+              <a href="#" class="header_nav_link">Bicycle</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header_top">
+        <img src="img/mainvisual.jpg" alt="Profile" srcset="" />
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="inner" id="about">
+        <h2 class="section_title">
+          <span class="under">About</span>
+        </h2>
+        <div class="about_pc">
+          <div class="about_img"><img src="./img/about.jpg" /></div>
+          <div class="about_pc_text">
+            <h3 class="section_subtitle">KAKERU MIUAICHI</h3>
+            <div class="section_textarea">
+              <p>
+                テキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキスト<br />
+                テキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="inner" id="bicycle">
+        <h2 class="section_title"><span class="under">Bicycle</span></h2>
+        <div class="bicycle_contents">
+          <div class="bicycle_pc">
+            <div class="section_img"><img src="img/bicycle1.jpg" /></div>
+            <h3 class="section_subtitle">タイトルタイトル</h3>
+            <div class="section_textarea">テキストテキストテキスト</div>
+          </div>
+          <div class="bicycle_pc">
+            <div class="section_img"><img src="img/bicycle2.jpg" /></div>
+            <h3 class="section_subtitle">タイトルタイトル</h3>
+            <div class="section_textarea">テキストテキストテキスト</div>
+          </div>
+          <div class="bicycle_pc">
+            <div class="section_img"><img src="img/bicycle3.jpg" /></div>
+            <h3 class="section_subtitle">タイトルタイトル</h3>
+            <div class="section_textarea">テキストテキストテキスト</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <small>©2025/03/31 Sakai</small>
+    </footer>
+  </body>
+</html>
